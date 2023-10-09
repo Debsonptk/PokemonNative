@@ -5,7 +5,11 @@ const Stack = createNativeStackNavigator();
 
 const Routes: React.FC = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
       <Stack.Screen name="Base" component={BaseScreen} />
     </Stack.Navigator>
   );
